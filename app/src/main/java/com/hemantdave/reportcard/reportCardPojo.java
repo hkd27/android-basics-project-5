@@ -27,19 +27,7 @@ public class reportCardPojo {
 
         this.year = year;
     }
-    public String GetReportCard(){  /*Here i have implemented the toString method*/
-        reportCard.put("Student Name",studentName);
-        reportCard.put("Roll Number",rollNo);
-        reportCard.put("Year",year+"");
-        reportCard.put("Math",math);
-        reportCard.put("Science",Science);
-        reportCard.put("Social Studies",SocialStudies);
-        reportCard.put("English Litreature",EnglishLiterature);
-
-        return reportCard.toString();
-
-
-    }
+    
     public String getMath() {
 
         return math;
@@ -55,6 +43,19 @@ public class reportCardPojo {
 
     public void setScience(String science) {
         Science = science;
+    }
+    public String GetReportCard(){  /*Here i have implemented the toString method*/
+        reportCard.put("Student Name",studentName);
+        reportCard.put("Roll Number",rollNo);
+        reportCard.put("Year",year+"");
+        reportCard.put("Math",math);
+        reportCard.put("Science",Science);
+        reportCard.put("Social Studies",SocialStudies);
+        reportCard.put("English Litreature",EnglishLiterature);
+
+        return reportCard.toString();
+
+
     }
 
     public String getSocialStudies() {
