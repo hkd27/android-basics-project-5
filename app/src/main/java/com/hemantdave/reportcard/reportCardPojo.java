@@ -1,8 +1,5 @@
 package com.hemantdave.reportcard;
 
-import java.util.HashMap;
-
-
 public class reportCardPojo {
 
 
@@ -12,7 +9,6 @@ public class reportCardPojo {
     private String EnglishLiterature;
     private String studentName="";
     private String rollNo="";
-    public HashMap<String,String> reportCard=new HashMap<>();
     private int year=0;
 
 
@@ -27,7 +23,12 @@ public class reportCardPojo {
 
         this.year = year;
     }
-    
+    @Override
+    public String toString() {
+        return " \n Name: '" + this.studentName + "', \n Roll Number: '" + this.rollNo + "', \n Year: '" + this.year + "'" +
+                "  \n Marks: \n  Math:"+this.math+" \n Science"+this.Science+" \n Social Studies:"+this.SocialStudies+" \n" +
+                " English Litreature:"+this.EnglishLiterature;
+    }
     public String getMath() {
 
         return math;
@@ -43,19 +44,6 @@ public class reportCardPojo {
 
     public void setScience(String science) {
         Science = science;
-    }
-    public String GetReportCard(){  /*Here i have implemented the toString method*/
-        reportCard.put("Student Name",studentName);
-        reportCard.put("Roll Number",rollNo);
-        reportCard.put("Year",year+"");
-        reportCard.put("Math",math);
-        reportCard.put("Science",Science);
-        reportCard.put("Social Studies",SocialStudies);
-        reportCard.put("English Litreature",EnglishLiterature);
-
-        return reportCard.toString();
-
-
     }
 
     public String getSocialStudies() {
