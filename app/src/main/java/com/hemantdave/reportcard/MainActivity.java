@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
        /* Here i have instantiaed the reportCard class*/
-        reportCardPojo Student1=new reportCardPojo("A","A","B","A","Donald","KAC-1283",2001);
-        reportCardPojo Student2=new reportCardPojo("A","B","B","C","Duck","KAC-1251",2001);
-        reportCardPojo Student3=new reportCardPojo("B","A","B","A","Tom","KBC-1211",2001);
-        reportCardPojo Student4=new reportCardPojo("C","B","B","C","Jerry","KAC-1101",2001);
+        ReportCardPojo Student1=new ReportCardPojo("A","A","B","A","Donald","KAC-1283",2001);
+        ReportCardPojo Student2=new ReportCardPojo("A","B","B","C","Duck","KAC-1251",2001);
+        ReportCardPojo Student3=new ReportCardPojo("B","A","B","A","Tom","KBC-1211",2001);
+        ReportCardPojo Student4=new ReportCardPojo("C","B","B","C","Jerry","KAC-1101",2001);
 
         Log.i("Student 1 Report Card",Student1.GetReportCard());
         Toast.makeText(MainActivity.this, "Student 1 Report Card"+Student1.GetReportCard(), Toast.LENGTH_SHORT).show();
